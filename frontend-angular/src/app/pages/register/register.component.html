@@ -1,0 +1,15 @@
+<form class="form-signin" [formGroup]="form" (ngSubmit)="submit()">
+    <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+
+    <input formControlName="first_name" class="form-control" placeholder="First Name" required>
+
+    <input formControlName="last_name" class="form-control" placeholder="Last Name" required>
+
+    <input formControlName="email" type="email" class="form-control" placeholder="Email Address" required autofocus>
+    
+    <input formControlName="password" type="password"  class="form-control" placeholder="Password" required>
+    <input formControlName="passwordConfirm"  type="password"  class="form-control" placeholder="Password Confirmation" required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+ 
+  </form>

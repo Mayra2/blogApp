@@ -1,0 +1,12 @@
+
+<form class="form-signin" [formGroup]= "form" (ngSubmit)="submit()">
+    <div *ngIf="cls" class="alert alert-{{cls}}">
+        {{msg}}
+    </div>
+    <h1 class="h3 mb-3 font-weight-normal">Input your Email:</h1>
+
+    <input formControlName="email" type="email" class="form-control" placeholder="Email Address" required autofocus>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Send me an email!</button>
+ 
+  </form>

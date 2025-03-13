@@ -1,0 +1,25 @@
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-items">
+        <a routerLink="/" routerLinkActive="active" class="nav-link">Home</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-items" *ngIf="authenticated">
+        <a routerLink="/login" routerLinkActive="active" (click)='logout()' class="nav-link">Logout</a>
+      </li>
+    </ul>
+  
+    <ul class="navbar-nav my-2 my-lg-8">
+      <ng-container *ngIf="!authenticated">
+        <li class="nav-items">
+          <a routerLink="/login" routerLinkActive="active" class="nav-link">Login</a>
+        </li>
+        <li class="nav-items">
+          <a routerLink="/register" routerLinkActive="active" class="nav-link">Register</a>
+        </li>
+ </ng-container>
+</ul>
+  </nav>
+  

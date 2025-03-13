@@ -1,0 +1,15 @@
+
+<form class="form-signin" [formGroup]="form" (ngSubmit)="submit()">
+    <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
+
+    <input formControlName="email" type="email" class="form-control" placeholder="Email Address" required autofocus>
+    
+    <input formControlName="password" type="password"  class="form-control" placeholder="Password" required>
+
+    <div class="mb-3">
+        <a routerLink="/forgot">Forgot Password?</a>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+ 
+  </form>
